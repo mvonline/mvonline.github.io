@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.vafa.one/authors/</loc>
+    <loc>http://vafa.one/authors/</loc>
   </url><url>
-    <loc>http://www.vafa.one/categories/</loc>
+    <loc>http://vafa.one/categories/</loc>
   </url><url>
-    <loc>http://www.vafa.one/</loc>
+    <loc>http://vafa.one/</loc>
   </url><url>
-    <loc>http://www.vafa.one/series/</loc>
+    <loc>http://vafa.one/series/</loc>
   </url><url>
-    <loc>http://www.vafa.one/tags/</loc>
+    <loc>http://vafa.one/tags/</loc>
   </url>
 </urlset>
