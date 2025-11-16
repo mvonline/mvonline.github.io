@@ -24,7 +24,7 @@ markup:
 params:
   title: "Masoud Vafaei"
   description: "Senior Backend Engineer with 10+ years of experience"
-  favicon: "/favicon.ico"
+  favicon: "https://vafa.one/favicon.ico"
 
   # Hero Section
   hero:
@@ -33,7 +33,7 @@ params:
     title: "Masoud Vafaei"
     subtitle: "Senior Backend Engineer"
     content: "10+ years of experience designing and building scalable enterprise-level software systems. Expert in Java, PHP, Python, and microservices architecture."
-    image: /images/profile.jpg
+    image: /images/profile.png
     button:
       enable: true
       name: "Download CV"
@@ -54,7 +54,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.jpg"
+    image: "/images/me.png"
     content: |-
       I am a Senior Backend Engineer with over 10 years of experience building scalable, high-performance systems. Currently based in Stockholm, I specialize in designing microservice architectures and secure REST APIs for enterprise applications.
       
