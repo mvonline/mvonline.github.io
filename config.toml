@@ -3,7 +3,10 @@ languageCode = "en-us"
 title = "Masoud Vafaei - Senior Backend Engineer"
 theme = "hugo-profile"
 enableRobotsTXT = true
-paginate = 3
+[params]
+
+[params.pagination]
+pagerSize = 3
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -77,26 +80,33 @@ items = [
 enable = true
 
 [[params.experience.items]]
-job = "Development Team Lead"
 company = "VideoSlots"
 companyUrl = "https://videoslots.com"
+[[params.experience.items.jobs]]
+name = "Development Team Lead"
 date = "Aug 2025 - Present"
-location = "Stockholm, Sweden"
 content = "Leading development initiatives for a high-traffic iGaming platform with over 1 million users."
 
+[params.experience.items.jobs.info]
+content = "Leading development initiatives"
+
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Stockholm, Sweden"
+
 [[params.experience.items]]
-job = "Senior Software Engineer"
 company = "VideoSlots"
 companyUrl = "https://videoslots.com"
+[[params.experience.items.jobs]]
+name = "Senior Software Engineer"
 date = "Feb 2022 - Aug 2025"
-location = "Stockholm, Sweden"
 content = "iGaming platform with over 1 million users"
 
-[params.experience.items.info]
-enable = true
+[params.experience.items.jobs.info]
 content = "Key achievements and responsibilities"
 
-[params.experience.items.responsibilities]
+[[params.experience.items.jobs.responsibilities]]
 items = [
   "Designed and maintained secure microservices for high-traffic online casino backend",
   "Integrated new game providers into core systems while maintaining stability",
@@ -104,92 +114,132 @@ items = [
   "Technologies: PHP(Laravel), Docker, MariaDB, Redis, GitLab CI/CD, AWS"
 ]
 
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Stockholm, Sweden"
+
 [[params.experience.items]]
-job = "Senior Software Engineer"
 company = "Farabeen Dev"
+[[params.experience.items.jobs]]
+name = "Senior Software Engineer"
 date = "Sep 2020 - Sep 2023"
-location = "Tehran, Iran"
 content = "Custom software solutions provider for enterprise clients"
 
-[params.experience.items.responsibilities]
+[[params.experience.items.jobs.responsibilities]]
 items = [
   "Developed backend APIs and business logic using PHP (Laravel) and Python (FastAPI)",
   "Participated in end-to-end software lifecycle, from requirements to deployment",
   "Built internal tools to automate client data processing and reporting"
 ]
 
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Tehran, Iran"
+
 [[params.experience.items]]
-job = "Backend Engineer (Remote)"
 company = "Food Market Hub"
+[[params.experience.items.jobs]]
+name = "Backend Engineer (Remote)"
 date = "Jun 2021 - Feb 2022"
-location = "Kuala Lumpur, Malaysia"
 content = "Restaurant supply chain management platform"
 
-[params.experience.items.responsibilities]
+[[params.experience.items.jobs.responsibilities]]
 items = [
   "Built RESTful APIs and background workers in Python and Laravel",
   "Focused on maintainable, secure code and scalable deployment using Docker"
 ]
 
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Kuala Lumpur, Malaysia"
+
 [[params.experience.items]]
-job = "Senior Software Engineer"
 company = "Adro Digital Advertising Agency"
+[[params.experience.items.jobs]]
+name = "Senior Software Engineer"
 date = "Apr 2019 - Oct 2020"
-location = "Tehran, Iran"
 content = "Online advertising platform"
 
-[params.experience.items.responsibilities]
+[[params.experience.items.jobs.responsibilities]]
 items = [
   "Implemented backend logic using PHP, Node.js and Python",
   "Integrated multithreading and exception handling to enhance system performance",
   "Created SQL queries and RESTful APIs for internal tools and analytics"
 ]
 
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Tehran, Iran"
+
 [[params.experience.items]]
-job = "Backend Engineer (Remote)"
 company = "myDirectHome"
+[[params.experience.items.jobs]]
+name = "Backend Engineer (Remote)"
 date = "Dec 2018 - Oct 2020"
-location = "Guildford, England"
 content = "Real estate property management SaaS"
 
-[params.experience.items.responsibilities]
+[[params.experience.items.jobs.responsibilities]]
 items = [
   "Developed services in Laravel and Java for internal CRM",
   "Designed MongoDB schemas and managed cloud deployments"
 ]
 
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Guildford, England"
+
 [[params.experience.items]]
-job = "Backend Developer"
 company = "Tehran Internet"
+[[params.experience.items.jobs]]
+name = "Backend Developer"
 date = "Sep 2017 - Jun 2019"
-location = "Tehran, Iran"
 content = "E-learning platform development"
 
-[params.experience.items.responsibilities]
+[[params.experience.items.jobs.responsibilities]]
 items = [
   "Managed and delivered full-stack features using PHP, PostgreSQL, Docker, and Linux",
   "Deployed services with Nginx and supervised junior developers"
 ]
 
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Tehran, Iran"
+
 [[params.experience.items]]
-job = "Technical Lead"
 company = "ICT Department of Mashhad Municipality"
+[[params.experience.items.jobs]]
+name = "Technical Lead"
 date = "Mar 2013 - Oct 2017"
-location = "Mashhad, Iran"
 content = "Smart city and e-government solutions provider"
 
-[params.experience.items.responsibilities]
+[[params.experience.items.jobs.responsibilities]]
 items = [
   "Led Smart City solution development with Oracle ADF, SOA, BPM, and Java EE",
   "Architected high-availability services for citizen services and municipality portals"
 ]
 
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Mashhad, Iran"
+
 [[params.experience.items]]
-job = "Developer"
 company = "ICT Department of Mashhad Municipality"
+[[params.experience.items.jobs]]
+name = "Developer"
 date = "Mar 2012 - Apr 2013"
-location = "Mashhad, Iran"
 content = "Developing Mashhad Municipality Portal using PHP, MySQL, Apache, Linux"
+
+[[params.experience.items.jobs.featuredItems.fontAwesomeIcons]]
+icon = "fas fa-map-marker-alt"
+url = "#"
+tooltip = "Mashhad, Iran"
 
 # Education Section
 [params.education]

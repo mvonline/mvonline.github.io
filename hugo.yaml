@@ -12,7 +12,8 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+pagination:
+  pagerSize: 3
 enableRobotsTXT: true
 
 markup:
@@ -74,92 +75,143 @@ params:
   experience:
     enable: true
     items:
-      - job: "Development Team Lead"
-        company: "VideoSlots"
+      - company: "VideoSlots"
         companyUrl: "https://videoslots.com"
-        date: "Aug 2025 - Present"
-        location: "Stockholm, Sweden"
-        content: "Leading development initiatives for a high-traffic iGaming platform with over 1 million users."
+        jobs:
+          - name: "Development Team Lead"
+            date: "Aug 2025 - Present"
+            content: "Leading development initiatives for a high-traffic iGaming platform with over 1 million users."
+            info:
+              content: "Leading development initiatives"
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Stockholm, Sweden"
 
-      - job: "Senior Software Engineer"
-        company: "VideoSlots"
+      - company: "VideoSlots"
         companyUrl: "https://videoslots.com"
-        date: "Feb 2022 - Aug 2025"
-        location: "Stockholm, Sweden"
-        content: |-
-          iGaming platform with over 1 million users
-        featuredLink:
-          enable: false
-        info:
-          enable: true
-          content: "Key achievements and responsibilities"
-        responsibilities:
-          - "Designed and maintained secure microservices for high-traffic online casino backend"
-          - "Integrated new game providers into core systems while maintaining stability"
-          - "Collaborated cross-functionally with frontend, DevOps, and QA teams"
-          - "Technologies: PHP(Laravel), Docker, MariaDB, Redis, GitLab CI/CD, AWS"
+        jobs:
+          - name: "Senior Software Engineer"
+            date: "Feb 2022 - Aug 2025"
+            content: |-
+              iGaming platform with over 1 million users
+            info:
+              content: "Key achievements and responsibilities"
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Stockholm, Sweden"
+            responsibilities:
+              - "Designed and maintained secure microservices for high-traffic online casino backend"
+              - "Integrated new game providers into core systems while maintaining stability"
+              - "Collaborated cross-functionally with frontend, DevOps, and QA teams"
+              - "Technologies: PHP(Laravel), Docker, MariaDB, Redis, GitLab CI/CD, AWS"
 
-      - job: "Senior Software Engineer"
-        company: "Farabeen Dev"
-        date: "Sep 2020 - Sep 2023"
-        location: "Tehran, Iran"
-        content: "Custom software solutions provider for enterprise clients"
-        responsibilities:
-          - "Developed backend APIs and business logic using PHP (Laravel) and Python (FastAPI)"
-          - "Participated in end-to-end software lifecycle, from requirements to deployment"
-          - "Built internal tools to automate client data processing and reporting"
+      - company: "Farabeen Dev"
+        jobs:
+          - name: "Senior Software Engineer"
+            date: "Sep 2020 - Sep 2023"
+            content: |-
+              Custom software solutions provider for enterprise clients
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Tehran, Iran"
+            responsibilities:
+              - "Developed backend APIs and business logic using PHP (Laravel) and Python (FastAPI)"
+              - "Participated in end-to-end software lifecycle, from requirements to deployment"
+              - "Built internal tools to automate client data processing and reporting"
 
-      - job: "Backend Engineer (Remote)"
-        company: "Food Market Hub"
-        date: "Jun 2021 - Feb 2022"
-        location: "Kuala Lumpur, Malaysia"
-        content: "Restaurant supply chain management platform"
-        responsibilities:
-          - "Built RESTful APIs and background workers in Python and Laravel"
-          - "Focused on maintainable, secure code and scalable deployment using Docker"
+      - company: "Food Market Hub"
+        jobs:
+          - name: "Backend Engineer (Remote)"
+            date: "Jun 2021 - Feb 2022"
+            content: |-
+              Restaurant supply chain management platform
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Kuala Lumpur, Malaysia"
+            responsibilities:
+              - "Built RESTful APIs and background workers in Python and Laravel"
+              - "Focused on maintainable, secure code and scalable deployment using Docker"
 
-      - job: "Senior Software Engineer"
-        company: "Adro Digital Advertising Agency"
-        date: "Apr 2019 - Oct 2020"
-        location: "Tehran, Iran"
-        content: "Online advertising platform"
-        responsibilities:
-          - "Implemented backend logic using PHP, Node.js and Python"
-          - "Integrated multithreading and exception handling to enhance system performance"
-          - "Created SQL queries and RESTful APIs for internal tools and analytics"
+      - company: "Adro Digital Advertising Agency"
+        jobs:
+          - name: "Senior Software Engineer"
+            date: "Apr 2019 - Oct 2020"
+            content: |-
+              Online advertising platform
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Tehran, Iran"
+            responsibilities:
+              - "Implemented backend logic using PHP, Node.js and Python"
+              - "Integrated multithreading and exception handling to enhance system performance"
+              - "Created SQL queries and RESTful APIs for internal tools and analytics"
 
-      - job: "Backend Engineer (Remote)"
-        company: "myDirectHome"
-        date: "Dec 2018 - Oct 2020"
-        location: "Guildford, England"
-        content: "Real estate property management SaaS"
-        responsibilities:
-          - "Developed services in Laravel and Java for internal CRM"
-          - "Designed MongoDB schemas and managed cloud deployments"
+      - company: "myDirectHome"
+        jobs:
+          - name: "Backend Engineer (Remote)"
+            date: "Dec 2018 - Oct 2020"
+            content: |-
+              Real estate property management SaaS
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Guildford, England"
+            responsibilities:
+              - "Developed services in Laravel and Java for internal CRM"
+              - "Designed MongoDB schemas and managed cloud deployments"
 
-      - job: "Backend Developer"
-        company: "Tehran Internet"
-        date: "Sep 2017 - Jun 2019"
-        location: "Tehran, Iran"
-        content: "E-learning platform development"
-        responsibilities:
-          - "Managed and delivered full-stack features using PHP, PostgreSQL, Docker, and Linux"
-          - "Deployed services with Nginx and supervised junior developers"
+      - company: "Tehran Internet"
+        jobs:
+          - name: "Backend Developer"
+            date: "Sep 2017 - Jun 2019"
+            content: |-
+              E-learning platform development
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Tehran, Iran"
+            responsibilities:
+              - "Managed and delivered full-stack features using PHP, PostgreSQL, Docker, and Linux"
+              - "Deployed services with Nginx and supervised junior developers"
 
-      - job: "Technical Lead"
-        company: "ICT Department of Mashhad Municipality"
-        date: "Mar 2013 - Oct 2017"
-        location: "Mashhad, Iran"
-        content: "Smart city and e-government solutions provider"
-        responsibilities:
-          - "Led Smart City solution development with Oracle ADF, SOA, BPM, and Java EE"
-          - "Architected high-availability services for citizen services and municipality portals"
+      - company: "ICT Department of Mashhad Municipality"
+        jobs:
+          - name: "Technical Lead"
+            date: "Mar 2013 - Oct 2017"
+            content: |-
+              Smart city and e-government solutions provider
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Mashhad, Iran"
+            responsibilities:
+              - "Led Smart City solution development with Oracle ADF, SOA, BPM, and Java EE"
+              - "Architected high-availability services for citizen services and municipality portals"
 
-      - job: "Developer"
-        company: "ICT Department of Mashhad Municipality"
-        date: "Mar 2012 - Apr 2013"
-        location: "Mashhad, Iran"
-        content: "Developing Mashhad Municipality Portal using PHP, MySQL, Apache, Linux"
+      - company: "ICT Department of Mashhad Municipality"
+        jobs:
+          - name: "Developer"
+            date: "Mar 2012 - Apr 2013"
+            content: |-
+              Developing Mashhad Municipality Portal using PHP, MySQL, Apache, Linux
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fas fa-map-marker-alt
+                  url: "#"
+                  tooltip: "Mashhad, Iran"
 
   # Education Section
   education:
