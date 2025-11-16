@@ -1,0 +1,255 @@
+baseURL = "https://vafa.one/"
+languageCode = "en-us"
+title = "Masoud Vafaei - Senior Backend Engineer"
+theme = "hugo-profile"
+enableRobotsTXT = true
+paginate = 3
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+page = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+title = "Masoud Vafaei"
+description = "Senior Backend Engineer with 10+ years of experience"
+favicon = "/favicon.ico"
+
+# Hero Section
+[params.hero]
+enable = true
+intro = "Hi, my name is"
+title = "Masoud Vafaei"
+subtitle = "Senior Backend Engineer"
+content = "10+ years of experience designing and building scalable enterprise-level software systems. Expert in Java, PHP, Python, and microservices architecture."
+image = "/images/profile.jpg"
+
+[params.hero.button]
+enable = true
+name = "Download CV"
+url = "/cv/MasoudVafayeValeh.pdf"
+download = true
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/mvonline"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-gitlab"
+url = "https://gitlab.com/masoud.vafaei"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://linkedin.com/in/msdvafaei"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fas fa-envelope"
+url = "mailto:masoud.vafaei@gmail.com"
+
+# About Section
+[params.about]
+enable = true
+title = "About Me"
+image = "/images/me.jpg"
+content = """
+I am a Senior Backend Engineer with over 10 years of experience building scalable, high-performance systems. Currently based in Stockholm, I specialize in designing microservice architectures and secure REST APIs for enterprise applications.
+
+My expertise spans across various domains including iGaming platforms, Smart City solutions, and Online Advertising systems, where I've successfully delivered solutions serving millions of users.
+"""
+
+[params.about.skills]
+enable = true
+title = "Core Technologies:"
+items = [
+  "Java (Spring Boot)",
+  "PHP (Laravel)",
+  "Python (FastAPI, Flask)",
+  "Docker & CI/CD",
+  "PostgreSQL, MySQL, MongoDB, Redis",
+  "Microservices & SOA",
+  "AWS & Linux"
+]
+
+# Experience Section
+[params.experience]
+enable = true
+
+[[params.experience.items]]
+job = "Development Team Lead"
+company = "VideoSlots"
+companyUrl = "https://videoslots.com"
+date = "Aug 2025 - Present"
+location = "Stockholm, Sweden"
+content = "Leading development initiatives for a high-traffic iGaming platform with over 1 million users."
+
+[[params.experience.items]]
+job = "Senior Software Engineer"
+company = "VideoSlots"
+companyUrl = "https://videoslots.com"
+date = "Feb 2022 - Aug 2025"
+location = "Stockholm, Sweden"
+content = "iGaming platform with over 1 million users"
+
+[params.experience.items.info]
+enable = true
+content = "Key achievements and responsibilities"
+
+[params.experience.items.responsibilities]
+items = [
+  "Designed and maintained secure microservices for high-traffic online casino backend",
+  "Integrated new game providers into core systems while maintaining stability",
+  "Collaborated cross-functionally with frontend, DevOps, and QA teams",
+  "Technologies: PHP(Laravel), Docker, MariaDB, Redis, GitLab CI/CD, AWS"
+]
+
+[[params.experience.items]]
+job = "Senior Software Engineer"
+company = "Farabeen Dev"
+date = "Sep 2020 - Sep 2023"
+location = "Tehran, Iran"
+content = "Custom software solutions provider for enterprise clients"
+
+[params.experience.items.responsibilities]
+items = [
+  "Developed backend APIs and business logic using PHP (Laravel) and Python (FastAPI)",
+  "Participated in end-to-end software lifecycle, from requirements to deployment",
+  "Built internal tools to automate client data processing and reporting"
+]
+
+[[params.experience.items]]
+job = "Backend Engineer (Remote)"
+company = "Food Market Hub"
+date = "Jun 2021 - Feb 2022"
+location = "Kuala Lumpur, Malaysia"
+content = "Restaurant supply chain management platform"
+
+[params.experience.items.responsibilities]
+items = [
+  "Built RESTful APIs and background workers in Python and Laravel",
+  "Focused on maintainable, secure code and scalable deployment using Docker"
+]
+
+[[params.experience.items]]
+job = "Senior Software Engineer"
+company = "Adro Digital Advertising Agency"
+date = "Apr 2019 - Oct 2020"
+location = "Tehran, Iran"
+content = "Online advertising platform"
+
+[params.experience.items.responsibilities]
+items = [
+  "Implemented backend logic using PHP, Node.js and Python",
+  "Integrated multithreading and exception handling to enhance system performance",
+  "Created SQL queries and RESTful APIs for internal tools and analytics"
+]
+
+[[params.experience.items]]
+job = "Backend Engineer (Remote)"
+company = "myDirectHome"
+date = "Dec 2018 - Oct 2020"
+location = "Guildford, England"
+content = "Real estate property management SaaS"
+
+[params.experience.items.responsibilities]
+items = [
+  "Developed services in Laravel and Java for internal CRM",
+  "Designed MongoDB schemas and managed cloud deployments"
+]
+
+[[params.experience.items]]
+job = "Backend Developer"
+company = "Tehran Internet"
+date = "Sep 2017 - Jun 2019"
+location = "Tehran, Iran"
+content = "E-learning platform development"
+
+[params.experience.items.responsibilities]
+items = [
+  "Managed and delivered full-stack features using PHP, PostgreSQL, Docker, and Linux",
+  "Deployed services with Nginx and supervised junior developers"
+]
+
+[[params.experience.items]]
+job = "Technical Lead"
+company = "ICT Department of Mashhad Municipality"
+date = "Mar 2013 - Oct 2017"
+location = "Mashhad, Iran"
+content = "Smart city and e-government solutions provider"
+
+[params.experience.items.responsibilities]
+items = [
+  "Led Smart City solution development with Oracle ADF, SOA, BPM, and Java EE",
+  "Architected high-availability services for citizen services and municipality portals"
+]
+
+[[params.experience.items]]
+job = "Developer"
+company = "ICT Department of Mashhad Municipality"
+date = "Mar 2012 - Apr 2013"
+location = "Mashhad, Iran"
+content = "Developing Mashhad Municipality Portal using PHP, MySQL, Apache, Linux"
+
+# Education Section
+[params.education]
+enable = true
+
+[[params.education.items]]
+title = "Software Engineering"
+date = "2004 - 2008"
+location = "Mashhad, Iran"
+
+[params.education.items.school]
+name = "Bachelor's Degree in Software Engineering - Mashhad University"
+url = ""
+
+
+[[params.education.items]]
+title = "Software Engineering"
+date = "2010 - 2012"
+location = "Shiraz, Iran"
+
+[params.education.items.school]
+name = "Master degree in Software testing - Shiraz University"
+url = ""
+
+# Contact Section
+[params.contact]
+enable = true
+title = "Get in Touch"
+content = "I'm always open to discussing new projects, creative ideas, or opportunities."
+email = "masoud.vafaei@gmail.com"
+btnName = "Email Me"
+
+# Footer
+[params.footer]
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = false
+
+[params.footer.socialNetworks]
+github = "https://github.com/yourusername"
+linkedin = "https://linkedin.com/in/yourprofile"
+email = "masoud.vafaei@gmail.com"
+
+# List pages
+[params.listPages]
+disableFeaturedImage = false
+
+# Terms (required by theme)
+[params.terms]
+read = "Read"
+toc = "Table Of Contents"
+copyright = "All rights reserved"
+pageNotFound = "Page not found"
+emailText = "Check out this site"
+
+# Default front matter for content
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]

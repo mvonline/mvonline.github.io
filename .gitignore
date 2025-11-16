@@ -1,0 +1,19 @@
+cat > .gitignore << 'EOF'
+# Hugo
+/public/
+/resources/_gen/
+hugo_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+EOF
