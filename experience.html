@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Masoud Vafaei - Professional Experience</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Manrope -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "card-light": "#ffffff",
+                        "card-dark": "#16212e",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white transition-colors duration-200">
+    <div class="flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full bg-white/80 dark:bg-[#101922]/90 backdrop-blur-md border-b border-[#f0f2f4] dark:border-gray-800 transition-colors duration-300">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex items-center justify-center w-8 h-8 rounded bg-primary/10 text-primary">
+                            <span class="material-symbols-outlined">code</span>
+                        </div>
+                        <span class="text-lg font-bold tracking-tight text-[#111418] dark:text-white">Masoud
+                            Vafaei</span>
+                    </div>
+                    <!-- Desktop Nav -->
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                            href="index.html">Home</a>
+                        <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                            href="about.html">About</a>
+                        <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                            href="projects.html">Portfolio</a>
+                        <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <!-- Action Button -->
+                    <div class="hidden md:flex gap-4 items-center">
+                        <a href="contact.html"
+                            class="flex items-center gap-2 px-5 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors shadow-sm hover:shadow-md">
+                            <span>Contact Me</span>
+                            <span class="material-symbols-outlined text-[18px]">send</span>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button
+                        class="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-1 px-4 py-8 md:px-10 md:py-12">
+            <div class="max-w-[960px] mx-auto flex flex-col gap-10">
+                <!-- Section Header -->
+                <div class="flex flex-col gap-2 border-b border-[#f0f2f4] dark:border-gray-800 pb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="h-8 w-1.5 bg-primary rounded-full"></div>
+                        <h1 class="text-3xl font-extrabold tracking-tight text-[#111418] dark:text-white">Professional
+                            Experience</h1>
+                    </div>
+                    <p class="text-[#617589] dark:text-gray-400 pl-4 text-lg">A chronological overview of my journey in
+                        backend engineering and software development.</p>
+                </div>
+                <!-- Experience Timeline -->
+                <div class="relative flex flex-col gap-0 pl-2 md:pl-4">
+                    <!-- Item 1: Current Role -->
+                    <div class="group relative flex gap-6 pb-12 last:pb-0">
+                        <!-- Timeline Line & Dot -->
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary ring-4 ring-white dark:ring-background-dark z-10">
+                                <span class="material-symbols-outlined">work</span>
+                            </div>
+                            <div class="h-full w-[2px] bg-[#e5e7eb] dark:bg-gray-800 group-last:bg-transparent my-2">
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="flex-1 pt-1">
+                            <div
+                                class="bg-card-light dark:bg-card-dark rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-primary/30">
+                                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">Senior Software
+                                            Engineer</h3>
+                                        <span class="text-primary font-semibold text-base">VideoSlots</span>
+                                    </div>
+                                    <div class="flex flex-wrap items-center gap-3">
+                                        <div
+                                            class="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-[#617589] dark:text-gray-400 bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1.5 rounded-full">
+                                            <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                                            Feb 2022 - Aug 2025
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5 flex items-center gap-2 text-sm text-[#617589] dark:text-gray-400">
+                                    <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    <span>Stockholm, Sweden</span>
+                                </div>
+                                <ul class="mb-6 space-y-3 pl-1">
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>
+                                        <span class="leading-relaxed">Designed and maintained secure microservices for a
+                                            high-traffic online casino backend with <strong
+                                                class="text-[#111418] dark:text-white font-semibold">over 1 million
+                                                users</strong>.</span>
+                                    </li>
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>
+                                        <span class="leading-relaxed">Integrated new game providers into core systems
+                                            while maintaining stability and performance in an iGaming platform.</span>
+                                    </li>
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>
+                                        <span class="leading-relaxed">Collaborated cross-functionally with frontend,
+                                            DevOps, and QA teams in Agile workflows using PHP (Laravel), Docker,
+                                            MariaDB, Redis, and GitLab CI/CD.</span>
+                                    </li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 pt-2 border-t border-[#f0f2f4] dark:border-gray-800">
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">PHP</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Laravel</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Docker</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Microservices</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2: Previous Role -->
+                    <div class="group relative flex gap-6 pb-12 last:pb-0">
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white dark:bg-card-dark text-[#617589] dark:text-gray-400 border border-[#e5e7eb] dark:border-gray-700 ring-4 ring-white dark:ring-background-dark z-10">
+                                <span class="material-symbols-outlined">code</span>
+                            </div>
+                            <div class="h-full w-[2px] bg-[#e5e7eb] dark:bg-gray-800 group-last:bg-transparent my-2">
+                            </div>
+                        </div>
+                        <div class="flex-1 pt-1">
+                            <div
+                                class="bg-card-light dark:bg-card-dark rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">Senior Software
+                                            Engineer</h3>
+                                        <span class="text-primary font-semibold text-base">Farabeen Dev</span>
+                                    </div>
+                                    <div class="flex flex-wrap items-center gap-3">
+                                        <div
+                                            class="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-[#617589] dark:text-gray-400 bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1.5 rounded-full">
+                                            <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                                            Sep 2020 - Sep 2023
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5 flex items-center gap-2 text-sm text-[#617589] dark:text-gray-400">
+                                    <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    <span>Tehran, Iran</span>
+                                </div>
+                                <ul class="mb-6 space-y-3 pl-1">
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span
+                                            class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 dark:bg-gray-600"></span>
+                                        <span class="leading-relaxed">Developed backend APIs and business logic using
+                                            PHP (Laravel) and Python (FastAPI) for enterprise clients.</span>
+                                    </li>
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span
+                                            class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 dark:bg-gray-600"></span>
+                                        <span class="leading-relaxed">Participated in end-to-end software lifecycle,
+                                            from requirements to deployment for custom software solutions.</span>
+                                    </li>
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span
+                                            class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 dark:bg-gray-600"></span>
+                                        <span class="leading-relaxed">Built internal tools to automate client data
+                                            processing and reporting, improving operational efficiency.</span>
+                                    </li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 pt-2 border-t border-[#f0f2f4] dark:border-gray-800">
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">PHP</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">Laravel</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">Python</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">FastAPI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3: Early Career -->
+                    <div class="group relative flex gap-6 pb-12 last:pb-0">
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white dark:bg-card-dark text-[#617589] dark:text-gray-400 border border-[#e5e7eb] dark:border-gray-700 ring-4 ring-white dark:ring-background-dark z-10">
+                                <span class="material-symbols-outlined">dns</span>
+                            </div>
+                            <!-- No vertical line for the last item, handled by css or simple omission -->
+                        </div>
+                        <div class="flex-1 pt-1">
+                            <div
+                                class="bg-card-light dark:bg-card-dark rounded-xl border border-[#e5e7eb] dark:border-gray-800 p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">Technical Lead</h3>
+                                        <span class="text-primary font-semibold text-base">ICT Department of Mashhad
+                                            Municipality</span>
+                                    </div>
+                                    <div class="flex flex-wrap items-center gap-3">
+                                        <div
+                                            class="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-[#617589] dark:text-gray-400 bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1.5 rounded-full">
+                                            <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                                            Mar 2013 - Oct 2017
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5 flex items-center gap-2 text-sm text-[#617589] dark:text-gray-400">
+                                    <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    <span>Mashhad, Iran</span>
+                                </div>
+                                <ul class="mb-6 space-y-3 pl-1">
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span
+                                            class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 dark:bg-gray-600"></span>
+                                        <span class="leading-relaxed">Led Smart City solution development with Oracle
+                                            ADF, SOA, BPM, and Java EE for e-government services.</span>
+                                    </li>
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span
+                                            class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 dark:bg-gray-600"></span>
+                                        <span class="leading-relaxed">Architected high-availability services for citizen
+                                            services and municipality portals, ensuring system reliability.</span>
+                                    </li>
+                                    <li class="flex gap-3 text-base text-[#111418] dark:text-gray-300">
+                                        <span
+                                            class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300 dark:bg-gray-600"></span>
+                                        <span class="leading-relaxed">Managed development teams and coordinated with
+                                            stakeholders to deliver complex municipal software solutions.</span>
+                                    </li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 pt-2 border-t border-[#f0f2f4] dark:border-gray-800">
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">Java
+                                        EE</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">Oracle
+                                        ADF</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">SOA</span>
+                                    <span
+                                        class="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-3 py-1 text-xs font-medium text-[#111418] dark:text-gray-300">Leadership</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom CTA -->
+                <div class="flex flex-col items-center justify-center pt-8 pb-12">
+                    <p class="mb-4 text-[#617589] dark:text-gray-400 text-center">Want to see more details about my work
+                        history?</p>
+                    <a href="MasoudVafayeValeh.pdf" download
+                        class="group flex items-center justify-center gap-2 rounded-lg border-2 border-primary bg-transparent px-6 py-3 text-base font-bold text-primary hover:bg-primary hover:text-white transition-all duration-200">
+                        <span class="material-symbols-outlined group-hover:animate-bounce">arrow_downward</span>
+                        <span>Download Full Resume PDF</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- Footer Simple -->
+        <footer class="border-t border-[#f0f2f4] dark:border-gray-800 py-8 bg-white dark:bg-background-dark">
+            <div class="container mx-auto px-10 text-center text-[#617589] dark:text-gray-500 text-sm">
+                © 2024 Masoud Vafaei. Designed with Manrope.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

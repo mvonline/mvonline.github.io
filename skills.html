@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Masoud Vafaei - Resume Skills</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111418] dark:text-white">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Navigation -->
+        <div class="layout-container flex w-full flex-col">
+            <header
+                class="sticky top-0 z-50 w-full bg-white/80 dark:bg-[#101922]/90 backdrop-blur-md border-b border-[#f0f2f4] dark:border-gray-800 transition-colors duration-300">
+                <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+                        <!-- Logo -->
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center justify-center w-8 h-8 rounded bg-primary/10 text-primary">
+                                <span class="material-symbols-outlined">code</span>
+                            </div>
+                            <span class="text-lg font-bold tracking-tight text-[#111418] dark:text-white">Masoud
+                                Vafaei</span>
+                        </div>
+                        <!-- Desktop Nav -->
+                        <nav class="hidden md:flex items-center gap-8">
+                            <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                                href="index.html">Home</a>
+                            <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                                href="about.html">About</a>
+                            <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                                href="projects.html">Portfolio</a>
+                            <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                                href="contact.html">Contact</a>
+                        </nav>
+                        <!-- Action Button -->
+                        <div class="hidden md:flex gap-4 items-center">
+                            <a href="contact.html"
+                                class="flex items-center gap-2 px-5 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors shadow-sm hover:shadow-md">
+                                <span>Contact Me</span>
+                                <span class="material-symbols-outlined text-[18px]">send</span>
+                            </a>
+                        </div>
+                        <!-- Mobile Menu Button -->
+                        <button
+                            class="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col items-center py-10 px-4 md:px-40">
+            <div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1 gap-12">
+                <!-- Section Header & Intro -->
+                <div class="flex flex-col gap-2 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                        <div class="h-1 w-10 bg-primary rounded-full"></div>
+                        <span class="text-primary font-bold text-sm uppercase tracking-wider">Expertise</span>
+                    </div>
+                    <h1
+                        class="text-[#111418] dark:text-white tracking-tight text-3xl md:text-4xl font-extrabold leading-tight">
+                        Technical Proficiency
+                    </h1>
+                    <p
+                        class="text-[#617589] dark:text-gray-400 text-base md:text-lg font-normal leading-relaxed max-w-[720px] pt-2">
+                        A versatile toolset refined over 10+ years of backend engineering. Expertise in Java (Spring
+                        Boot), PHP (Laravel), and Python (FastAPI), with proven success in microservice architectures
+                        and secure REST APIs.
+                    </p>
+                </div>
+                <!-- Core Skills Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Languages & Frameworks Card -->
+                    <div
+                        class="flex flex-col gap-4 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] bg-white dark:bg-[#1a2632] p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                            <span class="material-symbols-outlined text-[28px]">code</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-1">Languages & Frameworks
+                            </h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm">Expert-level proficiency in multiple
+                                programming languages and frameworks.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Java</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Spring
+                                Boot</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">PHP</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Laravel</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Python</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">FastAPI</span>
+                        </div>
+                    </div>
+                    <!-- Databases Card -->
+                    <div
+                        class="flex flex-col gap-4 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] bg-white dark:bg-[#1a2632] p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                            <span class="material-symbols-outlined text-[28px]">database</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-1">Databases</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm">Expertise in relational and NoSQL
+                                database systems.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">PostgreSQL</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">MySQL</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">MongoDB</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Redis</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">OracleDB</span>
+                        </div>
+                    </div>
+                    <!-- DevOps Card -->
+                    <div
+                        class="flex flex-col gap-4 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] bg-white dark:bg-[#1a2632] p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                            <span class="material-symbols-outlined text-[28px]">settings</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-[#111418] dark:text-white mb-1">DevOps & Tools</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm">Containerization, CI/CD, and
+                                infrastructure management.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Docker</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Git</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">GitLab
+                                CI/CD</span>
+                            <span
+                                class="px-3 py-1 bg-[#f0f2f4] dark:bg-[#2a3441] rounded-full text-xs font-semibold text-[#111418] dark:text-gray-200">Linux</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Detailed Skill Levels -->
+                <div class="flex flex-col gap-8 md:flex-row w-full pt-8">
+                    <!-- Left Column: Technical Bars -->
+                    <div class="flex-1 flex flex-col gap-6">
+                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">Key Competencies</h3>
+                        <!-- Skill Item -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-end">
+                                <span class="text-sm font-semibold text-[#111418] dark:text-white">Java &amp; Spring
+                                    Boot</span>
+                                <span class="text-xs font-medium text-[#617589] dark:text-gray-400">95%</span>
+                            </div>
+                            <div class="h-2 w-full bg-[#e5e7eb] dark:bg-[#2a3441] rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full w-[95%]"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-end">
+                                <span class="text-sm font-semibold text-[#111418] dark:text-white">PHP &amp;
+                                    Laravel</span>
+                                <span class="text-xs font-medium text-[#617589] dark:text-gray-400">95%</span>
+                            </div>
+                            <div class="h-2 w-full bg-[#e5e7eb] dark:bg-[#2a3441] rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full w-[95%]"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-end">
+                                <span class="text-sm font-semibold text-[#111418] dark:text-white">Python &amp;
+                                    FastAPI</span>
+                                <span class="text-xs font-medium text-[#617589] dark:text-gray-400">90%</span>
+                            </div>
+                            <div class="h-2 w-full bg-[#e5e7eb] dark:bg-[#2a3441] rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between items-end">
+                                <span class="text-sm font-semibold text-[#111418] dark:text-white">Microservices
+                                    Architecture</span>
+                                <span class="text-xs font-medium text-[#617589] dark:text-gray-400">90%</span>
+                            </div>
+                            <div class="h-2 w-full bg-[#e5e7eb] dark:bg-[#2a3441] rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Tools & Workflow -->
+                    <div class="flex-1 flex flex-col gap-6 md:pl-10">
+                        <h3 class="text-xl font-bold text-[#111418] dark:text-white">Tools &amp; Workflow</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Tool Item -->
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-[#1a2632] border border-[#f0f2f4] dark:border-[#2a3441]">
+                                <span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+                                <span class="text-sm font-medium text-[#111418] dark:text-gray-200">Git / GitLab</span>
+                            </div>
+                            <!-- Tool Item -->
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-[#1a2632] border border-[#f0f2f4] dark:border-[#2a3441]">
+                                <span class="material-symbols-outlined text-primary text-[20px]">sync</span>
+                                <span class="text-sm font-medium text-[#111418] dark:text-gray-200">GitLab CI/CD</span>
+                            </div>
+                            <!-- Tool Item -->
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-[#1a2632] border border-[#f0f2f4] dark:border-[#2a3441]">
+                                <span class="material-symbols-outlined text-primary text-[20px]">box</span>
+                                <span class="text-sm font-medium text-[#111418] dark:text-gray-200">Docker</span>
+                            </div>
+                            <!-- Tool Item -->
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-[#1a2632] border border-[#f0f2f4] dark:border-[#2a3441]">
+                                <span class="material-symbols-outlined text-primary text-[20px]">storage</span>
+                                <span class="text-sm font-medium text-[#111418] dark:text-gray-200">Message
+                                    Queues</span>
+                            </div>
+                            <!-- Tool Item -->
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-[#1a2632] border border-[#f0f2f4] dark:border-[#2a3441]">
+                                <span class="material-symbols-outlined text-primary text-[20px]">view_kanban</span>
+                                <span class="text-sm font-medium text-[#111418] dark:text-gray-200">Agile / DDD</span>
+                            </div>
+                            <!-- Tool Item -->
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-[#1a2632] border border-[#f0f2f4] dark:border-[#2a3441]">
+                                <span class="material-symbols-outlined text-primary text-[20px]">computer</span>
+                                <span class="text-sm font-medium text-[#111418] dark:text-gray-200">Linux /
+                                    Ubuntu</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-6 border-t border-[#f0f2f4] dark:border-[#2a3441]">
+                            <h4 class="text-sm font-bold text-[#111418] dark:text-white mb-3">Soft Skills</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1.5 border border-[#dbe0e6] dark:border-[#374151] rounded text-sm text-[#617589] dark:text-gray-300">Agile
+                                    Development</span>
+                                <span
+                                    class="px-3 py-1.5 border border-[#dbe0e6] dark:border-[#374151] rounded text-sm text-[#617589] dark:text-gray-300">Domain-Driven
+                                    Design</span>
+                                <span
+                                    class="px-3 py-1.5 border border-[#dbe0e6] dark:border-[#374151] rounded text-sm text-[#617589] dark:text-gray-300">Load
+                                    Testing</span>
+                                <span
+                                    class="px-3 py-1.5 border border-[#dbe0e6] dark:border-[#374151] rounded text-sm text-[#617589] dark:text-gray-300">Security-First
+                                    Coding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Call to Action Banner -->
+                <div class="w-full mt-12">
+                    <div
+                        class="relative overflow-hidden rounded-xl bg-[#137fec] p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
+                        <!-- Decorative background circle -->
+                        <div class="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white opacity-10 blur-2xl">
+                        </div>
+                        <div class="absolute -left-10 -bottom-10 h-40 w-40 rounded-full bg-white opacity-10 blur-xl">
+                        </div>
+                        <div class="z-10 max-w-lg">
+                            <h2 class="text-2xl font-bold text-white mb-2">Want to see more details?</h2>
+                            <p class="text-blue-100 text-sm md:text-base">Download my full resume to view my complete
+                                project history and detailed skill breakdown.</p>
+                        </div>
+                        <div class="z-10 flex-shrink-0">
+                            <button
+                                class="flex items-center justify-center gap-2 rounded-lg bg-white text-[#137fec] px-6 py-3 font-bold text-sm hover:bg-blue-50 transition-colors shadow-lg">
+                                <span class="material-symbols-outlined text-[20px]">download</span>
+                                Download CV
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

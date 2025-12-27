@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Vafa - Selected Projects</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Sans:wght@100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "card-dark": "#1C252E",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white transition-colors duration-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full bg-white/80 dark:bg-[#101922]/90 backdrop-blur-md border-b border-[#f0f2f4] dark:border-gray-800 transition-colors duration-300">
+            <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex items-center justify-center w-8 h-8 rounded bg-primary/10 text-primary">
+                            <span class="material-symbols-outlined">code</span>
+                        </div>
+                        <span class="text-lg font-bold tracking-tight text-[#111418] dark:text-white">Masoud
+                            Vafaei</span>
+                    </div>
+                    <!-- Desktop Nav -->
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                            href="index.html">Home</a>
+                        <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                            href="about.html">About</a>
+                        <a class="text-sm font-medium text-primary" href="projects.html">Portfolio</a>
+                        <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <!-- Action Button -->
+                    <div class="hidden md:flex gap-4 items-center">
+                        <a href="contact.html"
+                            class="flex items-center gap-2 px-5 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors shadow-sm hover:shadow-md">
+                            <span>Contact Me</span>
+                            <span class="material-symbols-outlined text-[18px]">send</span>
+                        </a>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button
+                        class="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col items-center py-12 md:py-20 px-4 md:px-10 lg:px-40">
+            <div class="w-full max-w-[1100px] flex flex-col">
+                <!-- Section Header -->
+                <div class="mb-12">
+                    <p class="text-[#617589] dark:text-gray-400 text-sm font-medium uppercase tracking-wider mb-3">03.
+                        Portfolio</p>
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                        <h1
+                            class="text-[#111418] dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight">
+                            Selected Projects</h1>
+                        <p class="text-[#617589] dark:text-gray-400 max-w-lg text-base leading-relaxed md:text-right">
+                            A collection of work demonstrating my expertise in backend engineering, microservices, and
+                            scalable system design.
+                        </p>
+                    </div>
+                </div>
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1: VideoSlots -->
+                    <article
+                        class="group flex flex-col bg-white dark:bg-card-dark rounded-xl overflow-hidden border border-[#f0f2f4] dark:border-[#2a3642] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="VideoSlots Dashboard"
+                                style="background-image: url('videoslots_project_1766874799143.png');">
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="mb-3 flex items-center justify-between">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Senior Software
+                                    Engineer</span>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">
+                                VideoSlots</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+                                Designed and maintained secure microservices for a high-traffic online casino backend.
+                                Integrated new game providers into core systems while maintaining stability.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">PHP
+                                    (Laravel)</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Docker</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Redis</span>
+                            </div>
+                            <div
+                                class="pt-4 mt-auto border-t border-[#f0f2f4] dark:border-[#2a3642] flex items-center gap-5">
+                                <span
+                                    class="flex items-center gap-2 text-sm font-semibold text-[#617589] dark:text-gray-400">
+                                    02/2022 - 08/2025
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 2: Food Market Hub -->
+                    <article
+                        class="group flex flex-col bg-white dark:bg-card-dark rounded-xl overflow-hidden border border-[#f0f2f4] dark:border-[#2a3642] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Food Market Hub Dashboard"
+                                style="background-image: url('food_market_hub_project_1766874812010.png');">
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="mb-3 flex items-center justify-between">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Backend
+                                    Engineer</span>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">
+                                Food Market Hub</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+                                Built RESTful APIs and background workers for a restaurant supply chain management
+                                platform. Focused on maintainable, secure code and scalable deployment.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Python</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Laravel</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Docker</span>
+                            </div>
+                            <div
+                                class="pt-4 mt-auto border-t border-[#f0f2f4] dark:border-[#2a3642] flex items-center gap-5">
+                                <span
+                                    class="flex items-center gap-2 text-sm font-semibold text-[#617589] dark:text-gray-400">
+                                    06/2021 - 02/2022
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 3: Adro Digital -->
+                    <article
+                        class="group flex flex-col bg-white dark:bg-card-dark rounded-xl overflow-hidden border border-[#f0f2f4] dark:border-[#2a3642] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Adro Digital Dashboard"
+                                style="background-image: url('adro_digital_project_1766874826183.png');">
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="mb-3 flex items-center justify-between">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Senior Software
+                                    Engineer</span>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">
+                                Adro Digital</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+                                Developed backend logic for an online advertising platform. Integrated multithreading
+                                and exception handling to enhance system performance.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">PHP</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Node.js</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Python</span>
+                            </div>
+                            <div
+                                class="pt-4 mt-auto border-t border-[#f0f2f4] dark:border-[#2a3642] flex items-center gap-5">
+                                <span
+                                    class="flex items-center gap-2 text-sm font-semibold text-[#617589] dark:text-gray-400">
+                                    04/2019 - 10/2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 4: myDirectHome -->
+                    <article
+                        class="group flex flex-col bg-white dark:bg-card-dark rounded-xl overflow-hidden border border-[#f0f2f4] dark:border-[#2a3642] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="myDirectHome Dashboard"
+                                style="background-image: url('mydirecthome_project_1766874837947.png');">
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="mb-3 flex items-center justify-between">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Backend
+                                    Engineer</span>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">
+                                myDirectHome</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+                                Developed services in Laravel and Java for internal CRM. Designed MongoDB schemas and
+                                managed cloud deployments.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Laravel</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Java</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">MongoDB</span>
+                            </div>
+                            <div
+                                class="pt-4 mt-auto border-t border-[#f0f2f4] dark:border-[#2a3642] flex items-center gap-5">
+                                <span
+                                    class="flex items-center gap-2 text-sm font-semibold text-[#617589] dark:text-gray-400">
+                                    12/2018 - 10/2020
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 5: Tehran Internet -->
+                    <article
+                        class="group flex flex-col bg-white dark:bg-card-dark rounded-xl overflow-hidden border border-[#f0f2f4] dark:border-[#2a3642] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Tehran Internet Dashboard"
+                                style="background-image: url('tehran_internet_project_1766874853333.png');">
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="mb-3 flex items-center justify-between">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Backend
+                                    Developer</span>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">
+                                Tehran Internet</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+                                Managed and delivered full-stack features for an e-learning platform. Deployed services
+                                with Nginx and supervised junior developers.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">PHP</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">PostgreSQL</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Linux</span>
+                            </div>
+                            <div
+                                class="pt-4 mt-auto border-t border-[#f0f2f4] dark:border-[#2a3642] flex items-center gap-5">
+                                <span
+                                    class="flex items-center gap-2 text-sm font-semibold text-[#617589] dark:text-gray-400">
+                                    09/2017 - 06/2019
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 6: Mashhad Municipality -->
+                    <article
+                        class="group flex flex-col bg-white dark:bg-card-dark rounded-xl overflow-hidden border border-[#f0f2f4] dark:border-[#2a3642] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Mashhad Municipality Dashboard"
+                                style="background-image: url('mashhad_municipality_project_1766874867119.png');">
+                            </div>
+                        </div>
+                        <div class="flex flex-1 flex-col p-6">
+                            <div class="mb-3 flex items-center justify-between">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Technical
+                                    Lead</span>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">
+                                Mashhad Municipality</h3>
+                            <p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+                                Led Smart City solution development. Architected high-availability services for citizen
+                                services and municipality portals.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Java
+                                    EE</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">Oracle
+                                    ADF</span>
+                                <span
+                                    class="px-3 py-1 rounded-full bg-[#f0f2f4] dark:bg-[#2a3642] text-[#111418] dark:text-gray-300 text-xs font-medium">SOA</span>
+                            </div>
+                            <div
+                                class="pt-4 mt-auto border-t border-[#f0f2f4] dark:border-[#2a3642] flex items-center gap-5">
+                                <span
+                                    class="flex items-center gap-2 text-sm font-semibold text-[#617589] dark:text-gray-400">
+                                    03/2013 - 10/2017
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- Bottom CTA -->
+                <div class="mt-16 flex justify-center">
+                    <a class="group inline-flex items-center justify-center gap-2 rounded-lg border border-[#f0f2f4] dark:border-[#2a3642] bg-white dark:bg-[#1a2632] px-8 py-3 text-sm font-bold text-[#111418] dark:text-white shadow-sm transition-all hover:bg-background-light dark:hover:bg-[#202e3b] hover:border-primary/30"
+                        href="experience.html">
+                        View Complete Portfolio
+                        <span
+                            class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

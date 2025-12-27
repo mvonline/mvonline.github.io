@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>vafa.one - Identity Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .transparency-grid {
+            background-image: linear-gradient(45deg, #e5e7eb 25%, transparent 25%), linear-gradient(-45deg, #e5e7eb 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e5e7eb 75%), linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        .dark .transparency-grid {
+            background-image: linear-gradient(45deg, #1f2937 25%, transparent 25%), linear-gradient(-45deg, #1f2937 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #1f2937 75%), linear-gradient(-45deg, transparent 75%, #1f2937 75%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white min-h-screen flex flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] dark:border-gray-800 bg-white dark:bg-[#101922] px-6 lg:px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="size-8 flex items-center justify-center bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined text-2xl">diamond</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">vafa.one</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#111418] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-[#111418] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Resume</a>
+<a class="text-[#111418] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Portfolio</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors shadow-sm">
+<span class="truncate">Export Icon</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 ring-2 ring-white dark:ring-gray-800 shadow-md" data-alt="User profile picture showing a professional headshot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCp_9lNFNfqcyHeFjIajBwnKFaO2i3kjuvhG1Gjdxe_GYSiw4CfxRAimZOilL4YBMA4hR3_7FlE0-aySLCzL986-vMJWrp8YGGXf9vQh1YIBaIgar4vqmZdDmFjfOe6IhmcqDwYRT5QM2gG6O8kHoDJqPsAXJgAv22H629hiNDT8Q43CxYbZrPM1PKnTXT8aeyXEP2SKGHKIWmhlFkun86LvOntPzSr4U_SXpW5KBZkliYLjDF-P-pwIYhCVCkbolD3YnFWix9ZTJja");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 layout-container flex flex-col items-center py-8 px-4 md:px-10 lg:px-20">
+<div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Configuration -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Heading -->
+<div class="flex flex-col gap-2">
+<h1 class="text-[#111418] dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Identity Generator</h1>
+<p class="text-[#617589] dark:text-gray-400 text-base font-normal">Create and configure your personal brand icon.</p>
+</div>
+<!-- Config Card -->
+<div class="bg-white dark:bg-[#1a2632] rounded-xl border border-[#dbe0e6] dark:border-gray-700 p-6 shadow-sm flex flex-col gap-6">
+<!-- Type Selector -->
+<div>
+<label class="text-[#111418] dark:text-gray-200 text-sm font-bold leading-normal mb-2 block">Icon Type</label>
+<div class="flex h-12 w-full items-center justify-center rounded-lg bg-[#f0f2f4] dark:bg-gray-800 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-[#2c3b4b] has-[:checked]:shadow-sm has-[:checked]:text-primary text-[#617589] dark:text-gray-400 text-sm font-bold transition-all">
+<span class="truncate flex items-center gap-2"><span class="material-symbols-outlined text-lg">text_fields</span> Lettermark</span>
+<input checked="" class="invisible w-0" name="icon-type" type="radio" value="Lettermark"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-[#2c3b4b] has-[:checked]:shadow-sm has-[:checked]:text-primary text-[#617589] dark:text-gray-400 text-sm font-bold transition-all">
+<span class="truncate flex items-center gap-2"><span class="material-symbols-outlined text-lg">shape_line</span> Symbol</span>
+<input class="invisible w-0" name="icon-type" type="radio" value="Symbol"/>
+</label>
+</div>
+</div>
+<!-- Input Field -->
+<div>
+<label class="text-[#111418] dark:text-gray-200 text-sm font-bold leading-normal mb-2 block">Text Content</label>
+<input class="form-input flex w-full min-w-0 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-gray-800 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbe0e6] dark:border-gray-600 h-12 px-4 text-base font-normal leading-normal placeholder:text-[#617589]" placeholder="e.g. V, VO" value="V"/>
+</div>
+<!-- Sliders -->
+<div class="flex flex-col gap-4">
+<div>
+<div class="flex justify-between mb-2">
+<label class="text-[#111418] dark:text-gray-200 text-sm font-bold">Corner Radius</label>
+<span class="text-[#617589] text-sm">16px</span>
+</div>
+<input class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-primary" max="50" min="0" type="range" value="16"/>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<label class="text-[#111418] dark:text-gray-200 text-sm font-bold">Font Weight</label>
+<span class="text-[#617589] text-sm">Bold</span>
+</div>
+<input class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-primary" max="900" min="100" step="100" type="range" value="700"/>
+</div>
+</div>
+<!-- Color Picker -->
+<div>
+<label class="text-[#111418] dark:text-gray-200 text-sm font-bold leading-normal mb-3 block">Primary Color</label>
+<div class="flex flex-wrap gap-3">
+<label class="size-10 rounded-full cursor-pointer border border-[#dbe0e6] dark:border-gray-600 ring-2 ring-transparent has-[:checked]:ring-primary has-[:checked]:scale-110 transition-all shadow-sm" style="background-color: #137fec;">
+<input checked="" class="invisible" name="color-picker" type="radio"/>
+</label>
+<label class="size-10 rounded-full cursor-pointer border border-[#dbe0e6] dark:border-gray-600 ring-2 ring-transparent has-[:checked]:ring-primary has-[:checked]:scale-110 transition-all shadow-sm" style="background-color: #111418;">
+<input class="invisible" name="color-picker" type="radio"/>
+</label>
+<label class="size-10 rounded-full cursor-pointer border border-[#dbe0e6] dark:border-gray-600 ring-2 ring-transparent has-[:checked]:ring-primary has-[:checked]:scale-110 transition-all shadow-sm" style="background-color: #ec1345;">
+<input class="invisible" name="color-picker" type="radio"/>
+</label>
+<label class="size-10 rounded-full cursor-pointer border border-[#dbe0e6] dark:border-gray-600 ring-2 ring-transparent has-[:checked]:ring-primary has-[:checked]:scale-110 transition-all shadow-sm" style="background-color: #13ec80;">
+<input class="invisible" name="color-picker" type="radio"/>
+</label>
+<label class="size-10 rounded-full cursor-pointer border border-[#dbe0e6] dark:border-gray-600 ring-2 ring-transparent has-[:checked]:ring-primary has-[:checked]:scale-110 transition-all shadow-sm relative overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500">
+<input class="invisible" name="color-picker" type="radio"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Secondary Actions -->
+<div class="flex gap-4">
+<button class="flex-1 h-12 flex items-center justify-center gap-2 rounded-lg border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] text-[#111418] dark:text-white text-sm font-bold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-lg">code</span>
+                        Copy CSS
+                    </button>
+<button class="flex-1 h-12 flex items-center justify-center gap-2 rounded-lg border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] text-[#111418] dark:text-white text-sm font-bold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-lg">download</span>
+                        SVG
+                    </button>
+<button class="flex-1 h-12 flex items-center justify-center gap-2 rounded-lg border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] text-[#111418] dark:text-white text-sm font-bold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-lg">image</span>
+                        PNG
+                    </button>
+</div>
+</div>
+<!-- Right Column: Preview -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Main Preview Canvas -->
+<div class="rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] p-2 shadow-sm">
+<div class="flex items-center justify-between px-4 py-2 border-b border-[#f0f2f4] dark:border-gray-700 mb-2">
+<span class="text-xs font-bold uppercase tracking-wider text-gray-500">Master Component</span>
+<div class="flex gap-2">
+<span class="w-2 h-2 rounded-full bg-red-400"></span>
+<span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+<span class="w-2 h-2 rounded-full bg-green-400"></span>
+</div>
+</div>
+<div class="h-80 w-full rounded-lg transparency-grid flex items-center justify-center relative overflow-hidden group">
+<!-- The Icon -->
+<div class="size-48 bg-primary rounded-2xl shadow-2xl flex items-center justify-center text-white text-8xl font-black select-none transform transition-transform group-hover:scale-105 duration-300">
+                            V
+                        </div>
+<!-- Measurement Lines (Decorative) -->
+<div class="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute top-1/2 left-4 right-4 h-px border-t border-dashed border-primary/50 flex justify-center items-start"><span class="bg-white dark:bg-gray-800 text-[10px] px-1 -mt-2.5 text-primary">512px</span></div>
+<div class="absolute left-1/2 top-4 bottom-4 w-px border-l border-dashed border-primary/50 flex justify-start items-center"><span class="bg-white dark:bg-gray-800 text-[10px] py-1 -ml-6 text-primary rotate-[-90deg]">512px</span></div>
+</div>
+</div>
+<div class="px-4 py-3 flex justify-between items-center bg-white dark:bg-[#1a2632] rounded-b-lg">
+<span class="text-xs text-gray-400">512 x 512 px</span>
+<span class="text-xs font-mono text-gray-400">#137fec</span>
+</div>
+</div>
+<!-- Contextual Previews -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Browser Tab Preview -->
+<div class="rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] shadow-sm overflow-hidden flex flex-col">
+<div class="bg-[#dfe3e7] dark:bg-gray-800 px-3 py-2 flex items-center gap-2 border-b border-[#d1d5db] dark:border-gray-700">
+<div class="flex gap-1.5 mr-2">
+<div class="size-2.5 rounded-full bg-[#ff5f57]"></div>
+<div class="size-2.5 rounded-full bg-[#febc2e]"></div>
+<div class="size-2.5 rounded-full bg-[#28c840]"></div>
+</div>
+<div class="flex-1 bg-white dark:bg-[#101922] rounded-t-md px-3 py-1.5 flex items-center gap-2 max-w-[180px] text-xs shadow-sm relative top-1">
+<div class="size-4 bg-primary rounded-[3px] flex items-center justify-center text-[8px] font-bold text-white">V</div>
+<span class="truncate dark:text-gray-300">vafa.one | Resume</span>
+<span class="material-symbols-outlined text-[10px] ml-auto text-gray-400">close</span>
+</div>
+<div class="flex-1"></div>
+</div>
+<div class="p-6 bg-white dark:bg-[#101922] flex-1 flex flex-col items-center justify-center gap-2 min-h-[120px]">
+<p class="text-sm text-gray-400">Favicon Preview</p>
+<div class="size-8 bg-primary rounded-md flex items-center justify-center text-white font-bold text-lg shadow-sm">V</div>
+</div>
+</div>
+<!-- Social / Mobile Preview -->
+<div class="rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] shadow-sm overflow-hidden p-6 flex items-center gap-5">
+<div class="relative">
+<div class="size-16 rounded-full bg-primary flex items-center justify-center text-white text-3xl font-black ring-4 ring-white dark:ring-[#1a2632] shadow-lg">V</div>
+<div class="absolute bottom-0 right-0 size-5 bg-green-500 border-2 border-white dark:border-[#1a2632] rounded-full"></div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-[#111418] dark:text-white text-base font-bold">vafa.one</h3>
+<p class="text-gray-500 text-xs">@vafa_one</p>
+<div class="flex gap-2 mt-1">
+<span class="text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-2 py-0.5 rounded-full">Product Designer</span>
+</div>
+</div>
+</div>
+<!-- App Icon Grid Preview -->
+<div class="col-span-1 md:col-span-2 rounded-xl border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1a2632] shadow-sm overflow-hidden p-6 relative">
+<div class="absolute top-0 right-0 p-3 opacity-10">
+<span class="material-symbols-outlined text-6xl">smartphone</span>
+</div>
+<p class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-4">Mobile Home Screen</p>
+<div class="flex gap-6 justify-center">
+<div class="flex flex-col items-center gap-2">
+<div class="size-14 bg-gray-200 dark:bg-gray-700 rounded-xl"></div>
+<div class="h-2 w-10 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="size-14 bg-gray-200 dark:bg-gray-700 rounded-xl"></div>
+<div class="h-2 w-10 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="size-14 bg-primary rounded-xl shadow-lg flex items-center justify-center text-white text-2xl font-bold">V</div>
+<span class="text-[10px] text-[#111418] dark:text-gray-300 font-medium">Resume</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="size-14 bg-gray-200 dark:bg-gray-700 rounded-xl"></div>
+<div class="h-2 w-10 bg-gray-200 dark:bg-gray-700 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

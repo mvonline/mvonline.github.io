@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Masoud Vafaei - Backend Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden min-h-screen flex flex-col">
+  <header
+    class="sticky top-0 z-50 w-full bg-white/80 dark:bg-[#101922]/90 backdrop-blur-md border-b border-[#f0f2f4] dark:border-gray-800 transition-colors duration-300">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="flex items-center justify-center w-8 h-8 rounded bg-primary/10 text-primary">
+            <span class="material-symbols-outlined">code</span>
+          </div>
+          <span class="text-lg font-bold tracking-tight text-[#111418] dark:text-white">Masoud Vafaei</span>
+        </div>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a class="text-sm font-medium text-primary" href="index.html">Home</a>
+          <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+            href="about.html">About</a>
+          <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+            href="projects.html">Portfolio</a>
+          <a class="text-sm font-medium text-[#111418] dark:text-gray-300 hover:text-primary transition-colors"
+            href="contact.html">Contact</a>
+        </nav>
+        <!-- Action Button -->
+        <div class="hidden md:flex gap-4 items-center">
+          <a href="contact.html"
+            class="flex items-center gap-2 px-5 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors shadow-sm hover:shadow-md">
+            <span>Contact Me</span>
+            <span class="material-symbols-outlined text-[18px]">send</span>
+          </a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-24 py-12 lg:py-20 relative overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none"
+      style="background-image: radial-gradient(#137fec 1px, transparent 1px); background-size: 32px 32px;"></div>
+    <div class="peer/tl absolute top-0 left-0 w-1/2 h-1/2 z-0"></div>
+    <div class="peer/tr absolute top-0 right-0 w-1/2 h-1/2 z-0"></div>
+    <div class="peer/bl absolute bottom-0 left-0 w-1/2 h-1/2 z-0"></div>
+    <div class="peer/br absolute bottom-0 right-0 w-1/2 h-1/2 z-0"></div>
+    <div
+      class="absolute top-0 right-0 w-[500px] lg:w-[700px] h-[500px] lg:h-[700px] bg-primary/5 dark:bg-primary/10 rounded-full blur-[80px] -z-10 transition-all duration-[1500ms] ease-out translate-x-1/4 -translate-y-1/4 peer-hover/tr:scale-110 peer-hover/tr:bg-primary/15 peer-hover/tr:translate-x-0 peer-hover/tr:translate-y-0 peer-hover/tl:translate-x-1/3 pointer-events-none">
+    </div>
+    <div
+      class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-400/10 dark:bg-blue-400/15 rounded-full blur-[80px] -z-10 transition-all duration-[1500ms] ease-out -translate-x-1/4 translate-y-1/4 peer-hover/bl:scale-125 peer-hover/bl:bg-blue-400/20 peer-hover/bl:translate-x-0 peer-hover/bl:translate-y-0 peer-hover/br:translate-x-12 pointer-events-none">
+    </div>
+    <div
+      class="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-indigo-500/5 rounded-full blur-[100px] -z-10 transition-all duration-[2000ms] ease-out opacity-0 lg:opacity-100 -translate-x-1/2 -translate-y-1/2 peer-hover/tl:translate-x-[-40%] peer-hover/tl:translate-y-[-40%] peer-hover/br:translate-x-[-60%] peer-hover/br:translate-y-[-60%] peer-hover/tr:translate-x-[-40%] peer-hover/tr:translate-y-[-60%] peer-hover/bl:translate-x-[-60%] peer-hover/bl:translate-y-[-40%] pointer-events-none">
+    </div>
+    <div
+      class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-24 items-center relative z-10 pointer-events-none">
+      <div class="flex flex-col gap-8 order-2 lg:order-1 pointer-events-auto">
+        <div class="space-y-6">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit transition-transform hover:scale-105 cursor-default">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Available for new projects
+          </div>
+          <div class="space-y-2">
+            <h1
+              class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+              Hi, I'm <span
+                class="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400">Masoud</span>.
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-500 dark:text-slate-400">
+              Senior Backend Engineer
+            </h2>
+          </div>
+          <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
+            Senior Backend Engineer with 10+ years of experience designing and building scalable enterprise-level
+            software systems. Expertise in Java (Spring Boot), PHP (Laravel), and Python (FastAPI), with proven success
+            delivering microservice-based architectures and secure REST APIs.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 mt-2">
+          <button
+            class="flex items-center justify-center gap-2 bg-primary hover:bg-blue-600 text-white h-14 px-8 rounded-xl text-base font-bold transition-all shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]">
+            <span class="material-symbols-outlined text-[20px]">visibility</span>
+            View My Work
+          </button>
+          <a href="MasoudVafayeValeh.pdf" download
+            class="flex items-center justify-center gap-2 bg-transparent border-2 border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary text-slate-700 dark:text-slate-200 hover:text-primary dark:hover:text-primary h-14 px-8 rounded-xl text-base font-bold transition-all hover:bg-primary/5 active:scale-[0.98]">
+            <span class="material-symbols-outlined text-[20px]">download</span>
+            Download Resume
+          </a>
+        </div>
+        <div class="pt-8 mt-4 border-t border-slate-200 dark:border-slate-800">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Connect with me</p>
+          <div class="flex gap-4">
+            <a class="group flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:scale-110"
+              href="#">
+              <span
+                class="material-symbols-outlined text-slate-600 dark:text-slate-400 group-hover:text-white transition-colors">connect_without_contact</span>
+            </a>
+            <a class="group flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:scale-110"
+              href="#">
+              <span
+                class="material-symbols-outlined text-slate-600 dark:text-slate-400 group-hover:text-white transition-colors">terminal</span>
+            </a>
+            <a class="group flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:scale-110"
+              href="#">
+              <span
+                class="material-symbols-outlined text-slate-600 dark:text-slate-400 group-hover:text-white transition-colors">palette</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="order-1 lg:order-2 relative w-full aspect-square md:aspect-[4/3] lg:aspect-square flex justify-center lg:justify-end items-center pointer-events-auto">
+        <div
+          class="relative w-full h-full rounded-3xl overflow-hidden bg-slate-100 dark:bg-slate-800 shadow-2xl ring-1 ring-slate-900/5 dark:ring-white/10 group">
+          <div
+            class="w-full h-full bg-cover bg-center object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="Professional portrait of a man in a modern clean studio setting"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKENjwjFxD-CZudP_dvZBw-7hl1KymVvkxF1ESeWos0GksfDY37PaeT6Kw2xzgN42adC_cRFp7nYMYxCBaVmLtw0RqLlXNZp4IPOXxmaZVLUdV8MXcd4oHJjkCn7zVpQwCLai0nBeMMJDVLd-2XlRH5SaJmqnty-SZjTuM-To_DcL48co8egDf7RosUVSV4ufvUM59CT-s5bPlCMrlOOE7yL2lY-m9p4FJyhuirkhgYIpLAQ8ChMIRUU9Q-1uDQ5I_HA8smcm-RjyL');">
+          </div>
+          <div
+            class="absolute bottom-6 left-6 right-6 p-5 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md rounded-2xl border border-slate-100 dark:border-slate-700 shadow-xl flex items-center justify-between transition-transform duration-500 hover:scale-[1.02] cursor-default">
+            <div class="flex items-center gap-4">
+              <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-xl text-primary">
+                <span class="material-symbols-outlined">workspace_premium</span>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900 dark:text-white">10+ Years Experience</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Delivering quality since 2012</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-primary to-blue-300 rounded-full blur-2xl opacity-40 -z-10 animate-pulse">
+        </div>
+        <div
+          class="absolute -bottom-4 -left-4 w-24 h-24 bg-slate-200 dark:bg-slate-700 rounded-2xl -z-10 rotate-6 transition-transform duration-500 hover:rotate-12">
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
