@@ -1,281 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masoud Vafaye Valeh — Senior Backend Engineer & Team Lead</title>
-  <meta name="description" content="Personal website of Masoud Vafaye Valeh — Senior Backend Engineer and Engineering Team Lead based in Stockholm, Sweden.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0f16">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Masoud Vafaye Valeh — Senior Backend Engineer and former Engineering Team Lead based in Borås, Sweden. Building reliable distributed systems, fintech platforms, and developer tools.">
+  <meta name="author" content="Masoud Vafaye Valeh">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Masoud Vafaye Valeh — Backend Engineer & Engineering Leader">
+  <meta property="og:description" content="I build dependable systems for complex problems. Explore my experience and selected open-source engineering work.">
+  <meta property="og:url" content="https://vafa.one/">
+  <meta property="og:image" content="https://vafa.one/social-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://vafa.one/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Masoud Vafaye Valeh","jobTitle":"Senior Backend Engineer","url":"https://vafa.one/","sameAs":["https://github.com/mvonline","https://www.linkedin.com/in/msdvafaei/"],"address":{"@type":"PostalAddress","addressLocality":"Borås","addressCountry":"SE"}}
+  </script>
+  <title>Masoud Vafaye Valeh — Backend Engineer & Engineering Leader</title>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><div id="scrollProgress"></div></div>
 
-  <!-- Sidebar Navigation -->
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar__brand">
-      <a href="#home">Masoud<span>V</span></a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a href="#home" class="brand" aria-label="Masoud Vafaye Valeh — homepage"><span class="brand-symbol">m<span>v</span><span class="brand-pixel">.</span></span><span class="brand-separator" aria-hidden="true"></span><span class="brand-label">MASOUD <span>VAFAEI</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work" data-nav="work">Work<span class="nav-index">/01</span></a>
+        <a href="#experience" data-nav="experience">Experience<span class="nav-index">/02</span></a>
+        <a href="#expertise" data-nav="expertise">Expertise<span class="nav-index">/03</span></a>
+        <a href="#about" data-nav="about">About<span class="nav-index">/04</span></a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" id="themeToggle" class="icon-button theme-toggle" aria-label="Switch to light theme" title="Toggle color theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg>
+        </button>
+        <a class="header-contact" href="mailto:masoud@vafa.one?subject=Let's%20connect">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="mobile-menu-button icon-button" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button>
+      </div>
     </div>
-    <nav class="sidebar__nav">
-      <a href="#home" class="sidebar__link active" data-section="home">Home</a>
-      <a href="#about" class="sidebar__link" data-section="about">About me</a>
-      <a href="#portfolio" class="sidebar__link" data-section="portfolio">Portfolio</a>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="#work">Selected work <span>01</span></a>
+      <a href="#experience">Experience <span>02</span></a>
+      <a href="#expertise">Expertise <span>03</span></a>
+      <a href="#about">About <span>04</span></a>
+      <a href="#contact">Get in touch <span>05</span></a>
     </nav>
-    <div class="sidebar__socials">
-      <a href="https://github.com/mvonline" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-      </a>
-      <a href="https://linkedin.com/in/msdvafaei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-      </a>
-      <a href="mailto:masoud.vafaei@gmail.com" aria-label="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
-      </a>
-    </div>
-  </aside>
-
-  <!-- Mobile Header -->
-  <header class="mobile-header" id="mobileHeader">
-    <a href="#home" class="mobile-header__brand">Masoud<span>V</span></a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
   </header>
 
-  <!-- Main Content -->
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero__bg"></div>
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
-        <h1>I'm <span class="hero__name">Masoud Vafaye Valeh</span></h1>
-        <div class="hero__typed-wrap">
-          <span class="hero__typed" id="typedText"></span>
-          <span class="hero__cursor">|</span>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="live-dot" aria-hidden="true"></span> BASED IN BORÅS, SWEDEN <span class="eyebrow-divider">/</span> 15+ YEARS IN SOFTWARE</div>
+          <h1 id="heroTitle">Complex systems.<br><span class="headline-accent">Clear thinking.</span><br>Real impact<span class="hero-dot">.</span></h1>
+          <p class="hero-lead">I'm <strong>Masoud Vafaye Valeh</strong> — a senior backend engineer and former engineering team lead. I design dependable platforms, solve hard distributed-systems problems, and help teams deliver with confidence.</p>
+          <div class="hero-cta">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="Masoud_Vafaye_Valeh_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-facts" aria-label="Professional highlights">
+            <div class="fact"><strong>15<span>+</span></strong><span>Years building software</span></div>
+            <div class="fact"><strong>07</strong><span>Engineers led</span></div>
+            <div class="fact"><strong>03</strong><span>Core engineering domains</span></div>
+          </div>
         </div>
+        <div class="hero-visual" aria-label="Illustration of a connected event-driven software architecture">
+          <div class="console-window">
+            <div class="console-top"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>system.architecture</span><span class="console-state"><span class="tiny-dot"></span> ONLINE</span></div>
+            <div class="console-body">
+              <div class="console-comment">// resilient by design</div>
+              <div class="node node-client"><span class="node-icon">{ }</span><span><small>01 / ENTRY</small><strong>API Gateway</strong></span><span class="node-side">HTTPS</span></div>
+              <div class="flow-line"><span class="flow-pulse"></span></div>
+              <div class="node node-bus"><span class="node-icon bus-icon">⇄</span><span><small>02 / EVENT BACKBONE</small><strong>Kafka / Event Bus</strong></span><span class="node-side">ASYNC</span></div>
+              <div class="flow-branches" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="node-triple"><div><span class="service-symbol">₮</span><strong>Payments</strong><small>ACID</small></div><div><span class="service-symbol">⌁</span><strong>Workers</strong><small>RETRY</small></div><div><span class="service-symbol">◈</span><strong>Storage</strong><small>CONSISTENT</small></div></div>
+              <div class="console-bottom"><span><i class="terminal-caret" aria-hidden="true"></i>systems built for what comes next</span><span>✓</span></div>
+            </div>
+          </div>
+          <div class="float-tag float-tag-a"><span class="live-dot" aria-hidden="true"></span> event-driven</div>
+          <div class="float-tag float-tag-b">&lt; reliability /&gt;</div>
+        </div>
+      </div>
+      <div class="shell hero-bottom"><span>SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span><span class="mono">PORTFOLIO / 2026</span></div>
+    </section>
+
+    <section class="marquee-band" aria-label="Areas of expertise"><div class="marquee-track" aria-hidden="true"><span>DISTRIBUTED SYSTEMS</span><b>✳</b><span>BACKEND ARCHITECTURE</span><b>✳</b><span>ENGINEERING LEADERSHIP</span><b>✳</b><span>EVENT-DRIVEN PLATFORMS</span><b>✳</b><span>AI &amp; KNOWLEDGE SYSTEMS</span><b>✳</b><span>DISTRIBUTED SYSTEMS</span><b>✳</b><span>BACKEND ARCHITECTURE</span><b>✳</b><span>ENGINEERING LEADERSHIP</span><b>✳</b><span>EVENT-DRIVEN PLATFORMS</span><b>✳</b><span>AI &amp; KNOWLEDGE SYSTEMS</span><b>✳</b></div></section>
+
+    <section class="section work-section" id="work" aria-labelledby="workTitle">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div class="section-kicker"><span class="section-index">01 /</span> SELECTED WORK</div>
+          <div class="section-headline-row"><h2 id="workTitle">Proof is in<br>the <em>building.</em></h2><p>A few things I've designed, built, and made available to explore. Real code, architectural trade-offs, and an unreasonable interest in getting the details right.</p></div>
+        </div>
+        <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work <span>06</span></button>
+          <button class="filter-button" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+          <button class="filter-button" type="button" data-filter="opensource" aria-pressed="false">Open source</button>
+          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI / RAG</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card project-featured reveal" data-categories="systems" style="--card-accent:#d7ff86">
+            <div class="project-top"><span class="project-number">01 — FEATURED PLATFORM</span><a class="circle-link" href="https://github.com/mvonline/falconpay" target="_blank" rel="noopener noreferrer" aria-label="View FalconPay on GitHub">↗</a></div>
+            <div class="project-graphic graphic-falcon" aria-hidden="true"><div class="graphic-mesh"><span>API GATEWAY</span><div><i></i><i></i><i></i><i></i><i></i></div><span>KAFKA EVENT BUS</span></div><div class="graphic-service-row"><span>AUTH</span><span>PAYMENTS</span><span>LEDGER</span><span>NOTIFY</span></div><div class="graphic-glow"></div></div>
+            <div class="project-copy"><span class="project-type">EVENT-DRIVEN FINTECH</span><h3>FalconPay</h3><p>A financial microservices platform exploring transaction integrity, Kafka-driven communication, idempotency, transactional outbox, and service observability.</p><div class="project-tags"><span>TypeScript</span><span>NestJS</span><span>Kafka</span><span>PostgreSQL</span><span>Kubernetes</span></div></div>
+          </article>
+          <article class="project-card project-featured reveal" data-categories="opensource systems" style="--card-accent:#8fa8ff">
+            <div class="project-top"><span class="project-number">02 — DEVELOPER TOOLING</span><a class="circle-link" href="https://github.com/mvonline/locker" target="_blank" rel="noopener noreferrer" aria-label="View Locker on GitHub">↗</a></div>
+            <div class="project-graphic graphic-locker" aria-hidden="true"><div class="lock-orbit orbit-one"></div><div class="lock-orbit orbit-two"></div><div class="lock-center"><span>LOCK</span><strong>✓</strong><small>ACQUIRED</small></div><div class="lock-token token-left">fencing / 042</div><div class="lock-token token-right">TTL: 30s</div></div>
+            <div class="project-copy"><span class="project-type">CONCURRENCY / OPEN SOURCE</span><h3>Locker</h3><p>A reusable Laravel locking framework with 12 strategies, from reentrant locks and semaphores to fencing tokens and multi-resource coordination.</p><div class="project-tags"><span>PHP</span><span>Laravel</span><span>Redis</span><span>Concurrency</span><span>PHPUnit</span></div></div>
+          </article>
+          <article class="project-card project-featured reveal" data-categories="ai systems" style="--card-accent:#ffbe99">
+            <div class="project-top"><span class="project-number">03 — KNOWLEDGE INFRASTRUCTURE</span><a class="circle-link" href="https://github.com/mvonline/muninn" target="_blank" rel="noopener noreferrer" aria-label="View Muninn on GitHub">↗</a></div>
+            <div class="project-graphic graphic-muninn" aria-hidden="true"><div class="muninn-source"><span>DOCS</span><span>CODE</span><span>JIRA</span></div><div class="muninn-arrows">↓ &nbsp; ↓ &nbsp; ↓</div><div class="muninn-core"><span>◈</span><div><strong>EMBED → RETRIEVE</strong><small>QDRANT / LOCAL LLM</small></div></div><div class="muninn-answer">grounded answers <span>↗</span></div></div>
+            <div class="project-copy"><span class="project-type">AI / RETRIEVAL SYSTEMS</span><h3>Muninn</h3><p>A self-hosted RAG pipeline that turns Confluence, source code, documents, and websites into searchable knowledge with local LLMs and Jira-aware context.</p><div class="project-tags"><span>Python</span><span>Qdrant</span><span>Ollama</span><span>RAG</span><span>Docker</span></div></div>
+          </article>
+          <article class="project-card project-compact reveal" data-categories="opensource systems"><div class="project-compact-head"><span class="project-number">04 / SDK</span><span>↗</span></div><div class="project-compact-icon">⇄</div><div class="project-copy"><span class="project-type">EVENT INTEGRATION</span><h3>EventMesh SDK</h3><p>Laravel integration for Apache EventMesh, with multi-protocol drivers, Saga workflows, and outbox support.</p><div class="project-tags"><span>Laravel</span><span>Saga</span><span>MQTT</span></div><a class="text-link" href="https://github.com/mvonline/eventmesh-sdk" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></div></article>
+          <article class="project-card project-compact reveal" data-categories="opensource systems"><div class="project-compact-head"><span class="project-number">05 / SECURITY</span><span>↗</span></div><div class="project-compact-icon">◇</div><div class="project-copy"><span class="project-type">AUTHORIZATION</span><h3>OpenFGA RBAC</h3><p>A PHP and Laravel SDK with authorization checks, roles, middleware, and OpenFGA integration.</p><div class="project-tags"><span>PHP</span><span>OpenFGA</span><span>RBAC</span></div><a class="text-link" href="https://github.com/mvonline/openfga-laravel-rbac" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></div></article>
+          <article class="project-card project-compact reveal" data-categories="systems"><div class="project-compact-head"><span class="project-number">06 / FINTECH</span><span>↗</span></div><div class="project-compact-icon">⊞</div><div class="project-copy"><span class="project-type">TRANSACTION SAFETY</span><h3>Fund Transfer Service</h3><p>Spring Boot transfer API exploring distributed locks, optimistic concurrency, idempotency, and race-condition tests.</p><div class="project-tags"><span>Java</span><span>Spring Boot</span><span>Redis</span></div><a class="text-link" href="https://github.com/mvonline/java-interview-lock-system" target="_blank" rel="noopener noreferrer">Explore repository ↗</a></div></article>
+        </div>
+        <div class="all-projects-link reveal"><a class="button button-outline" href="https://github.com/mvonline?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories on GitHub <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section__heading">THIS IS ME</h2>
-        <div class="about__row">
-          <div class="about__text">
-            <p>Senior Backend Engineer and hands-on Engineering Team Lead with over 10 years of experience designing, scaling, and leading backend systems for high-traffic platforms serving over one million users.</p>
-            <p>Strong expertise in Java (Spring Boot), PHP (Laravel), and TypeScript (NestJS), with a focus on software architecture, modern engineering practices, microservices, system reliability, and engineering excellence.</p>
-            <p>Proven ability to lead cross-functional teams, define technical strategy, mentor senior engineers, and align architecture with business objectives across iGaming, Smart City, and AdTech domains.</p>
-            <a href="MasoudVafayeValeh.pdf" class="btn" download>DOWNLOAD MY RESUME</a>
-          </div>
-          <div class="about__photo">
-            <div class="about__photo-placeholder">
-              <span>MV</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section section--dark" id="experience">
-      <div class="container">
-        <h2 class="section__heading">EXPERIENCE</h2>
-        <div class="experience__list">
-
-          <div class="exp-card">
-            <h3 class="exp-card__role">Development Team Lead</h3>
-            <p class="exp-card__meta">Immense Group, Stockholm | Aug 2025 – Present</p>
-            <p class="exp-card__desc">Lead a cross-functional backend engineering team delivering a large-scale iGaming platform with 1M+ active users. Own architectural decisions for microservices, ensuring scalability, resilience, and operational stability. Define engineering standards and mentor senior engineers.</p>
-          </div>
-
-          <div class="exp-card">
-            <h3 class="exp-card__role">Senior Software Engineer</h3>
-            <p class="exp-card__meta">Immense Group, Stockholm | Feb 2022 – Aug 2025</p>
-            <p class="exp-card__desc">Designed and maintained high-performance backend services using Node.js, TypeScript, PHP (Laravel), Docker, and AWS. Implemented Redis caching and database optimizations for high-concurrency workloads. Improved deployment reliability through GitLab CI/CD automation.</p>
-          </div>
-
-          <div class="exp-card">
-            <h3 class="exp-card__role">Senior Software Engineer</h3>
-            <p class="exp-card__meta">Farabeen Dev, Tehran | Sep 2020 – Sep 2023</p>
-            <p class="exp-card__desc">Delivered enterprise backend systems for fintech, logistics, and government organizations. Automated reporting and data processing pipelines, reducing manual effort by approximately 50%. Led backend optimization initiatives to improve throughput and scalability.</p>
-          </div>
-
-          <div class="exp-card">
-            <h3 class="exp-card__role">Backend Engineer</h3>
-            <p class="exp-card__meta">Food Market Hub, Remote (Kuala Lumpur) | Jun 2021 – Feb 2022</p>
-            <p class="exp-card__desc">Built RESTful APIs and background workers for a supply-chain platform. Deployed containerized services using Docker and CI/CD pipelines. Improved data consistency across supplier–restaurant integrations.</p>
-          </div>
-
-          <div class="exp-card">
-            <h3 class="exp-card__role">Senior Software Engineer</h3>
-            <p class="exp-card__meta">Adro Digital Advertising Agency, Tehran | Apr 2019 – Oct 2020</p>
-            <p class="exp-card__desc">Developed backend services for an online advertising platform using PHP, Node.js, and Python. Optimized multithreading and exception handling for performance-critical systems. Designed APIs and SQL queries supporting real-time analytics.</p>
-          </div>
-
-          <div class="exp-card">
-            <h3 class="exp-card__role">Backend Engineer</h3>
-            <p class="exp-card__meta">myDirectHome, Remote (UK) | Dec 2018 – Oct 2020</p>
-            <p class="exp-card__desc">Built backend services for a real estate SaaS platform using Laravel and Java. Designed MongoDB schemas for CRM and property management features. Deployed and maintained cloud-based services for international customers.</p>
-          </div>
-
-          <div class="exp-card">
-            <h3 class="exp-card__role">Technical Lead</h3>
-            <p class="exp-card__meta">ICT Dept. of Mashhad Municipality | Mar 2013 – Oct 2017</p>
-            <p class="exp-card__desc">Led Smart City and e-government initiatives using Oracle ADF, SOA, BPM, and Java EE. Architected high-availability citizen service platforms used by millions of residents. Coordinated large cross-functional teams and mentored junior engineers.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-      <div class="container">
-        <h2 class="section__heading">SOME SKILLS</h2>
-        <div class="skills__grid">
-          <div class="skill">
-            <div class="skill__header">
-              <span class="skill__name">Java / Spring Boot</span>
-              <span class="skill__pct">90%</span>
-            </div>
-            <div class="skill__bar"><div class="skill__fill" data-width="90"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill__header">
-              <span class="skill__name">PHP / Laravel</span>
-              <span class="skill__pct">92%</span>
-            </div>
-            <div class="skill__bar"><div class="skill__fill" data-width="92"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill__header">
-              <span class="skill__name">TypeScript / NestJS</span>
-              <span class="skill__pct">88%</span>
-            </div>
-            <div class="skill__bar"><div class="skill__fill" data-width="88"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill__header">
-              <span class="skill__name">Docker / AWS</span>
-              <span class="skill__pct">85%</span>
-            </div>
-            <div class="skill__bar"><div class="skill__fill" data-width="85"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill__header">
-              <span class="skill__name">PostgreSQL / MySQL</span>
-              <span class="skill__pct">90%</span>
-            </div>
-            <div class="skill__bar"><div class="skill__fill" data-width="90"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill__header">
-              <span class="skill__name">System Architecture</span>
-              <span class="skill__pct">88%</span>
-            </div>
-            <div class="skill__bar"><div class="skill__fill" data-width="88"></div></div>
+    <section class="section experience-section" id="experience" aria-labelledby="experienceTitle">
+      <div class="shell">
+        <div class="section-heading reveal"><div class="section-kicker"><span class="section-index">02 /</span> THE JOURNEY</div><div class="section-headline-row"><h2 id="experienceTitle">Built in<br><em>production.</em></h2><p>More than fifteen years of hands-on engineering — from public-sector platforms to fintech and high-traffic consumer systems, with growing ownership and leadership along the way.</p></div></div>
+        <div class="career-layout">
+          <div class="career-aside reveal"><div class="career-aside-panel"><span class="mono faded">WHAT I BRING</span><p>Deep technical judgment. Calm incident response. A bias toward systems that are understandable, observable, and easy to change.</p><a class="text-link" href="Masoud_Vafaye_Valeh_CV.pdf" download>Full experience in my CV ↗</a></div></div>
+          <div class="timeline">
+            <article class="timeline-item reveal"><div class="timeline-year">2026 — PRESENT</div><div class="timeline-content"><h3>Enklare</h3><span class="timeline-role">Senior Full-Stack Engineer · Fintech</span><p>Delivering customer-facing financial-product features and backend services, working across application architecture, integrations, code quality, and collaboration with product stakeholders.</p><div class="timeline-tech">Backend APIs <i>·</i> Fintech <i>·</i> Product Engineering</div></div></article>
+            <article class="timeline-item reveal"><div class="timeline-year">2022 — 2026</div><div class="timeline-content"><h3>Immense Group <small>Videoslots platform</small></h3><div class="sub-role"><span>Development Team Lead</span><span>Aug 2025 — Jun 2026</span></div><p>Led seven backend engineers, collaborating with QA, while driving technical direction, mentoring, and multi-brand game-provider and wallet architecture decisions.</p><div class="sub-role"><span>Senior Software Engineer</span><span>Feb 2022 — Aug 2025</span></div><p>Developed and supported high-throughput backend APIs, provider integrations, Redis caching, CI/CD automation, and production incident resolution.</p><div class="timeline-tech">Leadership <i>·</i> High-traffic systems <i>·</i> Reliability</div></div></article>
+            <article class="timeline-item reveal"><div class="timeline-year">2020 — 2023</div><div class="timeline-content"><h3>Farabeen Dev</h3><span class="timeline-role">Senior Software Engineer</span><p>Delivered backend systems for fintech, logistics, and government clients, with a focus on APIs, reporting automation, and performance.</p></div></article>
+            <article class="timeline-item reveal"><div class="timeline-year">2018 — 2022</div><div class="timeline-content"><h3>International product teams</h3><span class="timeline-role">Food Market Hub · Adro · myDirectHome</span><p>Built SaaS and platform services across supply chain, advertising, and real estate — developing APIs, integrations, and data-intensive backend systems.</p></div></article>
+            <article class="timeline-item reveal"><div class="timeline-year">2013 — 2017</div><div class="timeline-content"><h3>Mashhad Municipality</h3><span class="timeline-role">Technical Lead</span><p>Led engineering initiatives for smart-city and e-government services using Java EE, Oracle ADF, and enterprise integration technologies.</p></div></article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Counters Section -->
-    <section class="counters" id="counters">
-      <div class="container">
-        <div class="counters__grid">
-          <div class="counter">
-            <span class="counter__number" data-target="10">0</span>
-            <span class="counter__plus">+</span>
-            <span class="counter__label">YEARS EXPERIENCE</span>
-          </div>
-          <div class="counter">
-            <span class="counter__number" data-target="7">0</span>
-            <span class="counter__plus">+</span>
-            <span class="counter__label">COMPANIES</span>
-          </div>
-          <div class="counter">
-            <span class="counter__number" data-target="4">0</span>
-            <span class="counter__plus"></span>
-            <span class="counter__label">OPEN SOURCE PROJECTS</span>
-          </div>
+    <section class="section expertise-section" id="expertise" aria-labelledby="expertiseTitle">
+      <div class="shell"><div class="section-heading reveal"><div class="section-kicker"><span class="section-index">03 /</span> HOW I WORK</div><div class="section-headline-row"><h2 id="expertiseTitle">Systems first.<br><em>Tools second.</em></h2><p>Technology changes. Good engineering habits scale: make things observable, keep boundaries clear, and choose the simplest design that meets the real constraints.</p></div></div>
+        <div class="expertise-grid">
+          <div class="expertise-card reveal"><div class="expertise-num">01</div><div class="expertise-icon">⌘</div><h3>Backend &amp; architecture</h3><p>Service boundaries, REST APIs, distributed workflows, concurrency control, data consistency, and pragmatic domain modeling.</p><div class="expertise-tags"><span>PHP / Laravel</span><span>TypeScript / NestJS</span><span>Java / Spring Boot</span><span>Python</span></div></div>
+          <div class="expertise-card reveal"><div class="expertise-num">02</div><div class="expertise-icon">◈</div><h3>Infrastructure &amp; reliability</h3><p>Production-minded delivery, resilient integrations, observability, incident investigation, and repeatable deployment workflows.</p><div class="expertise-tags"><span>Docker</span><span>AWS</span><span>Redis</span><span>PostgreSQL</span><span>Kafka</span><span>CI/CD</span></div></div>
+          <div class="expertise-card reveal"><div class="expertise-num">03</div><div class="expertise-icon">↗</div><h3>Leadership &amp; AI tooling</h3><p>Technical guidance, mentoring, reviews, and practical AI systems that augment engineers rather than hide the complexity.</p><div class="expertise-tags"><span>Technical Strategy</span><span>Mentorship</span><span>RAG</span><span>LLM Integration</span></div></div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio / Projects Section -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <h2 class="section__heading">MY WORK</h2>
-        <div class="portfolio__grid">
+    <section class="section about-section" id="about" aria-labelledby="aboutTitle"><div class="shell about-layout"><div class="about-intro reveal"><div class="section-kicker"><span class="section-index">04 /</span> BEYOND THE CODE</div><h2 id="aboutTitle">Engineer by trade.<br><em>Builder by nature.</em></h2></div><div class="about-body reveal"><p>I've spent my career working on the parts of software people don't always see: the transactions that must not fail, the integrations that need to keep working, and the systems teams have to maintain long after the first release.</p><p>Today I'm based in Borås, Sweden. I enjoy turning messy requirements into clear architecture, getting hands-on with implementation, and helping other engineers grow. Outside work, I keep exploring developer tooling, applied AI, and the ideas that make software a little more useful.</p><div class="about-note"><span class="note-icon">✳</span><span><strong>What matters to me</strong>Thoughtful engineering. Collaborative teams. Sustainable technical decisions.</span></div></div></div></section>
 
-          <div class="portfolio__item">
-            <div class="portfolio__img">
-              <div class="portfolio__img-placeholder portfolio__img--1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-              </div>
-            </div>
-            <div class="portfolio__info">
-              <h3>Laravel Discount</h3>
-              <p>A flexible Laravel package to manage application discounts, supporting various strategies like percentage-based, fixed amount, and stackable discounts. Includes features for discount codes, minimum order requirements, and usage limits with an easy-to-integrate API.</p>
-              <a href="https://github.com/mvonline/discount-laravel" target="_blank" rel="noopener noreferrer" class="portfolio__link">View on GitHub &rarr;</a>
-            </div>
-          </div>
-
-          <div class="portfolio__item portfolio__item--reverse">
-            <div class="portfolio__img">
-              <div class="portfolio__img-placeholder portfolio__img--2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-              </div>
-            </div>
-            <div class="portfolio__info">
-              <h3>Locker</h3>
-              <p>A specialized locking mechanism designed to manage fine-grained locks and improve concurrency by freeing up global locks for other system tasks. Mirrors standard mutex behaviors, allowing users to provide custom keys for resource-specific locking.</p>
-              <a href="https://github.com/mvonline/locker" target="_blank" rel="noopener noreferrer" class="portfolio__link">View on GitHub &rarr;</a>
-            </div>
-          </div>
-
-          <div class="portfolio__item">
-            <div class="portfolio__img">
-              <div class="portfolio__img-placeholder portfolio__img--3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
-              </div>
-            </div>
-            <div class="portfolio__info">
-              <h3>FitMind</h3>
-              <p>An intelligent health and fitness platform focused on workout planning and progress tracking. Developed a user-centric interface to provide personalized training insights and health monitoring capabilities.</p>
-              <a href="https://github.com/mvonline/fitmind" target="_blank" rel="noopener noreferrer" class="portfolio__link">View on GitHub &rarr;</a>
-            </div>
-          </div>
-
-          <div class="portfolio__item portfolio__item--reverse">
-            <div class="portfolio__img">
-              <div class="portfolio__img-placeholder portfolio__img--4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-              </div>
-            </div>
-            <div class="portfolio__info">
-              <h3>TV2</h3>
-              <p>A video streaming application optimized for high-speed performance and seamless media playback. Focused on delivering a responsive user experience for browsing and consuming digital video content.</p>
-              <a href="https://github.com/mvonline/tv2" target="_blank" rel="noopener noreferrer" class="portfolio__link">View on GitHub &rarr;</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>Copyright Masoud Vafaye Valeh &copy; 2025</p>
-      </div>
-    </footer>
-
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle"><div class="shell contact-layout"><div class="contact-copy reveal"><div class="section-kicker"><span class="section-index">05 /</span> SAY HELLO</div><h2 id="contactTitle">Have a hard problem?<br><em>Let's build the answer.</em></h2><p>I'm interested in meaningful engineering conversations, ambitious products, and teams that value long-term quality.</p><div class="contact-actions"><a class="button button-dark" href="mailto:masoud@vafa.one?subject=Hello%20Masoud">Start a conversation <span aria-hidden="true">↗</span></a><button class="copy-email" id="copyEmail" type="button" aria-label="Copy email address" data-email="masoud@vafa.one">Copy email <span aria-hidden="true">⧉</span></button></div></div><div class="contact-mark" aria-hidden="true"><span>m</span><span>v</span><b>.</b></div></div></section>
   </main>
-
-  <script src="script.js"></script>
+  <footer class="site-footer"><div class="shell footer-grid"><div><span class="footer-brand">MV<span>.</span></span><p>Designed with intention. Built to last.</p></div><div class="footer-links"><a href="https://github.com/mvonline" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/msdvafaei/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:masoud@vafa.one">Email ↗</a></div><p class="footer-legal">© <span id="footerYear">2026</span> Masoud Vafaye Valeh <span class="footer-sep">·</span> <a href="#top">Back to top ↑</a></p></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 </body>
 </html>
